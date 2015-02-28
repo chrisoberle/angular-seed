@@ -5,22 +5,25 @@ module.exports = function(config){
 
     files : [
       'app/bower_components/angular/angular.js',
-      'app/bower_components/angular-route/angular-route.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
-      'app/components/**/*.js'
+      'app/bower_components/angular-ui-router/release/angular-ui-router.js',
+
+      'app/components/**/*.js',
+      'app/*.js'
     ],
 
     autoWatch : true,
 
     frameworks: ['jasmine'],
 
-    browsers : ['Chrome'],
+    browsers : ['PhantomJS'],
 
     plugins : [
             'karma-chrome-launcher',
             'karma-firefox-launcher',
             'karma-jasmine',
-            'karma-junit-reporter'
+            'karma-junit-reporter',
+            'karma-phantomjs-launcher'
             ],
 
     junitReporter : {
