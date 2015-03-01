@@ -13,6 +13,9 @@ appControllers.controller('View2Controller', ['$scope', '$location',
 ]);
 
 appControllers.controller('AccordionController', function ($scope) {
+	console.log('AccordionController');
+  
+
   $scope.oneAtATime = true;
 
   $scope.groups = [

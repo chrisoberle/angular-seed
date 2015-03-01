@@ -32,29 +32,17 @@ myApp.config(function($stateProvider, $urlRouterProvider){
   $stateProvider
     .state('view1', {
     	url: "/view1",
-    	views: {
-    		'body': {
-    	    	templateUrl: "/app/views/view1.html",
-    	    	controller: "View1Controller"    			
-    		}
-    	}
+    	templateUrl: "/app/views/view1.html",
+    	controller: "View1Controller"    			
     })
     .state('view2', {
     	url: "/view2",
-    	views: {
-    		'body': {
-    	    	templateUrl: "/app/views/view2.html",
-    	    	controller: "View2Controller"  			
-    		}
-    	}
+		templateUrl: "/app/views/view2.html",
+    	controller: "View2Controller"  			
     })
     .state('accordion', {
    		url: "/accordion",
-    	views: {
-    		'body': {
-    	    	templateUrl: "/app/views/accordion.html",
-    	    	controller: "AccordionController"  			
-    		}
-    	}
+    	templateUrl: "/app/views/accordion.html",
+    	controller: "AccordionController"  			
     })
 });
